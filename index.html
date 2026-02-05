@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 🌐 Social Preview -->
+    <meta property="og:title" content="Baby 💖 Will You Be My Valentine?" />
+    <meta
+      property="og:description"
+      content="I made something special just for you ❤️"
+    />
+    <meta
+      property="og:image"
+      content="https://<YOUR-USERNAME>.github.io/<REPO-NAME>/preview.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://<YOUR-USERNAME>.github.io/<REPO-NAME>/"
+    />
+
+    <!-- WhatsApp / Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta charset="UTF-8" />
+    <title>Valentine 💖</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Screen lock -->
+    <div id="lockScreen"></div>
+
+    <!-- Sounds -->
+    <audio id="celebrateSound" src="./celebration.mp3"></audio>
+
+    <div class="card">
+      <img id="mainImage" src="home.gif" alt="Valentine" />
+
+      <h2 id="typingText"></h2>
+
+      <div class="buttons-area">
+        <button id="yesBtn" class="btn-yes">YES 💘</button>
+        <button id="noBtn" class="btn-no">No</button>
+      </div>
+
+      <div id="result" class="message"></div>
+
+      <div id="shareArea" class="hidden">
+        <button id="whatsappBtn" class="btn btn-success mt-3">
+          Share on WhatsApp 💬
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
