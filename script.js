@@ -75,9 +75,6 @@ document.addEventListener("mousemove", (e) => {
 
 /* NO click */
 noBtn.addEventListener("click", () => {
-  sadSound.currentTime = 0;
-  sadSound.play();
-
   mainImage.src = "no.gif";
 
   noBtn.textContent = answers_no[noCount % answers_no.length];
