@@ -133,6 +133,9 @@ h2 {
 
 /* 📱 Mobile-first tweaks */
 @media (max-width: 480px) {
+  .btn-yes {
+    left: auto !important;
+  }
   .card {
     padding: 20px;
     border-radius: 20px;
